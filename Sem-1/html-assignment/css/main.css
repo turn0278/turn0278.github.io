@@ -1,0 +1,46 @@
+
+/* Changing body text font family and font size */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+/* Changing header and footer background colour */
+header,
+footer{
+  background-color: orange;
+}
+
+/* Changing class of main heading and colour of text */
+.site-title{
+  color: darkgreen;
+}
+
+/* Adding box-shadow to image */
+#my-image{
+  box-shadow: 0 0 2px 1px black;
+}
+
+/* Changing bullets in hobbies list */
+#hobbies{
+  list-style: square;
+}
+
+/* Adding background to odd list items in hobby list */
+#hobbies li:nth-child(2n+1){
+  background-color: blanchedalmond;
+}
+
+/* Styling navigation list */
+nav ul {
+  list-style: none;
+  }
+nav ul a:link{
+  text-decoration: none;
+  background-color: blanchedalmond;
+  border: 2px solid #000;
+}
+nav ul a:hover,
+nav ul a:focus {
+  background-color: brown;
+}

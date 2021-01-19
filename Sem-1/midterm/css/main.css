@@ -1,0 +1,132 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #aad4cf;
+}
+
+.container{
+  background-color: rgb(235, 240, 241);
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* Formatting Header */
+
+#image-head{
+  position: relative;  
+  margin: -.5em auto -.3em auto;
+}
+
+h1{
+  color: white;
+  font-weight: normal;
+  font-size: 200%; 
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Formatting Nav */
+nav ul{
+  list-style: none;
+}
+
+nav ul li{
+  display: inline-block;
+  width: 32%;
+  box-sizing: border-box;
+  margin-top: -1em;
+  margin-bottom: -3em;
+  padding: .5em;
+  border-right: 2px solid rgb(179, 174, 174);
+  text-align: center;
+}
+
+nav ul li:last-child{
+  border: none;
+}
+
+nav ul a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Fomatting Body */
+
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  font-size: large;
+  line-height: 50%;
+}
+
+h4 {
+    font-size: small;
+    font-weight: bold;
+    line-height: 0%;
+}
+
+p {
+ font-size: small; 
+}
+
+#starfish {
+  width: 25%;
+  float: left;
+  padding: 0 1em 1em 0;
+}
+
+/* Format Main */
+
+main {
+  padding: .5em;
+}
+
+/* Format Contact Field */
+
+ul {
+  font-size: small;
+  padding-left: 2%;
+}
+
+#form {
+  padding: 10px;
+  border-style: solid;
+  border-width: thin;
+  font-size: small;
+  line-height: 2;
+}
+
+input[type=text] {
+  width: 100%;
+}
+
+input[type=email] {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 6rem;
+}
+
+button {
+  height: 25px;
+  align-content: center;
+  font-size: x-small;
+  text-transform: uppercase;
+}
+
+/* Format Footer */
+
+footer {
+  font-size: x-small;
+  text-align: right;
+}
