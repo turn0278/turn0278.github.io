@@ -134,3 +134,227 @@ table {
   border-spacing: 0;
 }
 
+/***--------------------------
+       Custom Styles
+--------------------------***/
+
+html{
+  font-family: 'Montserrat', sans-serif;
+  color: #333131;
+}
+
+body {
+  line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  line-height: inherit;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+img {
+  width: 100%;
+}
+
+a,
+a:link,
+a:visited 
+a:active {
+  text-decoration: none;
+  color: #ff8480;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 5.063rem;
+  margin: 0.5em 0 0.5em;
+}
+
+h2 {
+  font-size: 3.375rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+  margin: 0.2em 0em 0em 0em;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 1em 0;
+}
+
+button{
+  border: none;
+  background: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* -----------------------
+    Header
+------------------------- */
+
+/* ----------- Header (Mobile) ----------- */
+
+.logo {
+  width: 33%;
+  margin: 0 5% 0 5%;
+}
+
+
+/* -----------------------
+    Main
+------------------------- */
+
+/* ----------- Main (Mobile) ----------- */
+
+.bodytext{
+  margin: 0 5% 0 5%;
+
+}
+.bodytext h1{
+  font-weight: bolder;
+}
+
+.bodytext h3{
+  font-weight: normal;
+}
+
+.scooter {
+  width: 90%;
+  margin: 0 5% 0 5%;
+}
+
+/* Apply Box */
+.apply{
+  border-radius: 25px;
+  box-shadow: 5px 5px 25px 2px grey;
+  margin: 5% 5% 10% 5%;
+  padding: 5%;
+}
+
+.apply h4{
+  font-weight: normal;
+}
+
+.apply input[type=text]{
+  width: 98%;
+  height: 3em;
+  margin-bottom: .5em;
+  border-radius: 10px;
+  border: none;
+  background-color: #f7f7ff;
+}
+
+.apply input[type=email]{
+  width: 98%;
+  height: 3em;
+  margin-bottom: .5em;
+  border-radius: 10px;
+  border: none;
+  background-color: #f7f7ff;
+}
+
+.apply input[type=checkbox]{
+  height: 25px;
+  width: 25px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+label{
+  font-size: 1.5rem; 
+}
+
+.apply button{
+  background-color: #57eeab;
+  width: 97%;
+  border-radius: 10px;
+  height: 2em;
+  color: #333131;
+  font-size: 2.25rem;
+  font-weight: bold;
+  border: none;
+}
+
+/* -----------------------
+    Footer
+------------------------- */
+
+/* ----------- Footer (Mobile) ----------- */
+
+.site-footer{
+  background-color: #fffd8c;
+  padding: 5%;
+}
+
+.site-footer h4{
+  font-weight: normal;
+}
+
+.site-footer input[id=hours]{
+  width: 30%;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.site-footer input[id=city]{
+  width: 60%;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.site-footer button{
+  background-color: #ff8480;
+  width: 97%;
+  border-radius: 10px;
+  height: 2em;
+  color: #f7f7ff;
+  font-size: 2.25rem;
+  font-weight: bold;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.icons{
+  color: #333131;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons img{
+  width: 10%;
+}
