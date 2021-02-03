@@ -147,7 +147,7 @@ p {
 
 .banner {
   height: 600px;
-  background: grey url("./images/mobile-banner.jpg") no-repeat center bottom;
+  background: grey url("images/mobile-banner.jpg") no-repeat center bottom;
   background-size: cover;
 }
 

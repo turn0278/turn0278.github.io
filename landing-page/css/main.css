@@ -217,28 +217,27 @@ button{
   padding: 1em;
 }
 
-/* -----------------------
-    Header
-------------------------- */
+/**** -----------------------
+        MOBILE STYLES
+------------------------- ****/
 
-/* ----------- Header (Mobile) ----------- */
+/*** ----------- Header (Mobile) ----------- ***/
 
+    /* using % for responsive design */
 .logo {
   width: 33%;
   margin: 0 5% 0 5%;
 }
 
+/*** ----------- Main (Mobile) ----------- ***/
 
-/* -----------------------
-    Main
-------------------------- */
-
-/* ----------- Main (Mobile) ----------- */
-
+    /* setting margin which will be standard L/R */
 .bodytext{
   margin: 0 5% 0 5%;
-
 }
+
+
+    /* Note: I prefer using header and para tags to control sizes for easier changes across the page */
 .bodytext h1{
   font-weight: bolder;
 }
@@ -247,17 +246,27 @@ button{
   font-weight: normal;
 }
 
-.scooter {
-  width: 90%;
-  margin: 0 5% 0 5%;
+    /* width taking into account margin */
+.desktopmain {
+    background-image: url("../images/bg-image/scooter.svg");
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: 50%;
 }
 
-/* Apply Box */
+/* .scooter { */
+  /* width: 90%; */
+  /* margin: 0 5% 0 5%; */
+/* } */
+
+/** -- Formatting Apply Box -- **/
 .apply{
   border-radius: 25px;
   box-shadow: 5px 5px 25px 2px grey;
-  margin: 5% 5% 10% 5%;
+    /* margin set to 40% at the top for the scooter image */
+  margin: 40% 5% 10% 5%;
   padding: 5%;
+  background-color: white;
 }
 
 .apply h4{
@@ -304,11 +313,7 @@ label{
   border: none;
 }
 
-/* -----------------------
-    Footer
-------------------------- */
-
-/* ----------- Footer (Mobile) ----------- */
+/*** ----------- Footer (Mobile) ----------- ***/
 
 .site-footer{
   background-color: #fffd8c;
@@ -319,25 +324,26 @@ label{
   font-weight: normal;
 }
 
-.site-footer input[id=hours]{
-  width: 30%;
-  height: 3rem;
+    /* input elements sized similarily */
+input[id=hours]{
+  width: 34%;
+  height:2em;
   border: none;
   border-radius: 10px;
-  font-size: large;
+  font-size: 2.25rem;
 }
 
-.site-footer input[id=city]{
-  width: 60%;
-  height: 3rem;
+input[id=city]{
+  width: 64%;
+  height: 2em;
   border: none;
   border-radius: 10px;
-  font-size: large;
+  font-size: 2.25rem;
 }
 
 .site-footer button{
   background-color: #ff8480;
-  width: 97%;
+  width: 98%;
   border-radius: 10px;
   height: 2em;
   color: #f7f7ff;
@@ -348,13 +354,98 @@ label{
   margin-bottom: 3rem;
 }
 
+    /* used flex for icons, best for responsiveness */
 .icons{
   color: #333131;
   padding-top: 1rem;
   display: flex;
   justify-content: space-around;
+  background-color: #fffd8c;
 }
 
 .icons img{
   width: 10%;
 }
+
+/**** -----------------------
+        TABLET STYLES
+------------------------- ****/
+
+@media screen and (min-width: 760px){
+  
+  /*** ----------- Header (Tablet) ----------- ***/
+  
+  .logo{
+    max-width: 260px;
+  }
+  
+  /*** ----------- Footer (Tablet) ----------- ***/
+
+    /* used flex to line calculator inputs horizontally */
+  .calc { 
+     display: flex;
+  }
+
+    /* elements resized to fit horizontally during responsiveness */
+  input[id=hours]{
+    width: 19%;
+  }
+  
+  input[id=city]{
+    width: 39%;
+  }
+  
+  .site-footer button{
+    width: 36%;
+  }
+
+}
+
+/**** -----------------------
+        DESKTOP STYLES
+------------------------- ****/
+
+@media screen and (min-width: 1150px){
+
+  /*** ----------- Main (Desktop) ----------- ***/
+
+    /* removing scooter picture to use it as background for flexed main elements */
+  /* .scooterpic{ */
+    /* display: none; */
+  /* } */
+
+  .bodytext{
+    width: 30%;
+    vertical-align: middle;
+  }
+
+  .apply{
+    /* resetting margin for new picture position */
+    margin-top: 0%;
+    margin-bottom: 5%;
+    width: 30%;
+  }
+
+ 
+
+  .desktopmain{
+    display: flex;
+    justify-content: space-between;
+  }
+  /*** ----------- Footer (Desktop) ----------- ***/
+
+
+  /* flex footer elements into place */
+  .site-footer{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  /* resize social media icons for new position in flex */
+  .icons img{
+    width: 20%;
+    padding-left: 3rem;
+  }
+
+} 
