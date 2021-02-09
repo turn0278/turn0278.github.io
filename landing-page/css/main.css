@@ -459,9 +459,9 @@ input[id=city]{
     justify-content: space-between;
   }
 
-  .footform{
-    max-width: 65%;
-  }
+  /* .footform{ */
+    /* max-width: 65%; */
+  /* } */
 
     /* resize social media icons for new position in flex */
   .icons img{
