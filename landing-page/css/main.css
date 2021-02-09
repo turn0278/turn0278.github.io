@@ -478,9 +478,10 @@ input[id=city]{
     font-size: 1.5rem;
    
   }
-  /* .footform{ */
-    /* max-width: 65%; */
-  /* } */
+  
+  .footform{
+    max-width: 65%;
+  }
 
     /* resize social media icons for new position in flex */
   .icons img{
