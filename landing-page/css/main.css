@@ -459,6 +459,25 @@ input[id=city]{
     justify-content: space-between;
   }
 
+  input[id=hours]{
+    /* width: 33%; */
+    
+    font-size: 1rem;
+  }
+  
+  input[id=city]{
+    /* width: 64%; */
+
+    font-size: 1rem;
+  }
+  
+  .site-footer button{
+ 
+    /* width: 98%; */
+   
+    font-size: 1.5rem;
+   
+  }
   /* .footform{ */
     /* max-width: 65%; */
   /* } */
