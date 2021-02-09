@@ -250,14 +250,9 @@ button{
 .desktopmain {
     background-image: url("../images/bg-image/scooter.svg");
     background-repeat: no-repeat;
-    background-position: center 40%;
+    background-position: center 45%;
     background-size: 50%;
 }
-
-/* .scooter { */
-  /* width: 90%; */
-  /* margin: 0 5% 0 5%; */
-/* } */
 
 /** -- Formatting Apply Box -- **/
 .apply{
@@ -326,11 +321,11 @@ label{
 
     /* input elements sized similarily */
 input[id=hours]{
-  width: 34%;
+  width: 33%;
   height:2em;
   border: none;
   border-radius: 10px;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
 }
 
 input[id=city]{
@@ -338,7 +333,7 @@ input[id=city]{
   height: 2em;
   border: none;
   border-radius: 10px;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
 }
 
 .site-footer button{
@@ -354,7 +349,7 @@ input[id=city]{
   margin-bottom: 3rem;
 }
 
-    /* used flex for icons, best for responsiveness */
+    /* used flex for icons, found it best for responsiveness */
 .icons{
   color: #333131;
   padding-top: 1rem;
@@ -375,10 +370,18 @@ input[id=city]{
   
   /*** ----------- Header (Tablet) ----------- ***/
   
+    /* Resized logo for new dimensions */
   .logo{
     max-width: 260px;
   }
+
+  /*** ----------- Main (Tablet) ----------- ***/
   
+   /* reposition background picture for new dimensions */
+  .desktopmain {
+    background-position: center 40%;
+  }   
+
   /*** ----------- Footer (Tablet) ----------- ***/
 
     /* used flex to line calculator inputs horizontally */
@@ -389,14 +392,32 @@ input[id=city]{
     /* elements resized to fit horizontally during responsiveness */
   input[id=hours]{
     width: 19%;
+    font-size: 2.25rem;
   }
   
   input[id=city]{
     width: 39%;
+    font-size: 2.25rem;
   }
   
   .site-footer button{
     width: 36%;
+  }
+
+  .icons :nth-child(1){
+    order: 1;
+  }
+
+  .icons :nth-child(2){
+    order: 3;
+  }
+
+  .icons :nth-child(3){
+    order: 2;
+  }
+
+  .icons :nth-child(4){
+    order: 4;
   }
 
 }
@@ -408,11 +429,6 @@ input[id=city]{
 @media screen and (min-width: 1150px){
 
   /*** ----------- Main (Desktop) ----------- ***/
-
-    /* removing scooter picture to use it as background for flexed main elements */
-  /* .scooterpic{ */
-    /* display: none; */
-  /* } */
 
   .bodytext{
     width: 30%;
@@ -426,23 +442,21 @@ input[id=city]{
     width: 30%;
   }
 
- 
-
+    /* using flex to space main body elements */
   .desktopmain{
     display: flex;
     justify-content: space-between;
   }
+
   /*** ----------- Footer (Desktop) ----------- ***/
 
-
-  /* flex footer elements into place */
+    /* flex footer elements into place */
   .site-footer{
     display: flex;
     justify-content: space-between;
   }
-  
 
-  /* resize social media icons for new position in flex */
+    /* resize social media icons for new position in flex */
   .icons img{
     width: 20%;
     padding-left: 3rem;

@@ -21,33 +21,28 @@
     <!-- Site Main: divided into 3 sections for responsive design -->
     <main>
 
-        <!-- desktopmain DIV added for greater specificity in reponse -->
+        <!-- desktopmain DIV added for greater specificity in responsive design -->
         <div class="desktopmain">
-             <!-- bodytext: Sectioned out for responsive grid -->
+             <!-- bodytext: Sectioned out for responsive flex -->
             <section class="bodytext">
                 <h1>Want to be your own boss&#63;</h1>
                 <h3>Start today and make up to &dollar;30&sol;hr driving your own vehicle with Dash!</h3>
             </section>
 
-            <!-- Scooter Picture: Sectioned out for responsive grid -->
-            <!-- <section class="scooterpic"> -->
-                <!-- <img src="images/bg-image/scooter.svg" alt="Scooter" class="scooter"> -->
-            <!-- </section> -->
-
-            <!-- Application Form: Sectioned out for responsive grid -->
+            <!-- Application Form: Sectioned out for responsive flex -->
             <section class="apply">
                 <h2>Apply Now</h2>
                 <h4>Enter your info below.</h4>
-                <form action="#" method="get" id="applyform">
-                    <input type="text" id="firstname" name="firstname" placeholder="First Name"><br>
-                    <input type="text" id="secondname" name="secondname" placeholder="Second Name"><br>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name"><br>
+                <input type="text" id="secondname" name="secondname" placeholder="Second Name"><br>
+                <div class="applyorder">
                     <input type="text" id="phone" name="phone" placeholder="Phone Number"><br>
                     <input type="email" id="email" name="email" placeholder="Email Address"><br>
-                    <input type="checkbox">
-                    <label for="yes">I agree to dash terms</label><br>
-                    <button type="button">DRIVE WITH US</button>
-                    <p>Already applied? <a href="#">Check your application status here</a></p>
-                </form>
+                </div>    
+                <input type="checkbox">
+                <label>I agree to dash terms</label><br>
+                <button type="button">DRIVE WITH US</button>
+                <p>Already applied? <a href="#">Check your application status here</a></p>
             </section>
         </div>
        
@@ -56,22 +51,23 @@
     <!-- Site Footer -->
     <footer class="site-footer">
             
-        <!-- footform DIV for desktop grid -->
+        <!-- footform DIV for flex -->
         <div class="footform">
             <h3>See how much you can earn with Dash.</h3>
             <h4>how many hours do you want to drive with us this week?</h4>
-            <form action="#" method="get" id="calc"></form>
+            <!-- divided these out for greater control with the flex over response -->
+            <form action="#" method="get" id="calc">
                 <input type="text" id="hours" name="hours" placeholder="  Hours">
                 <input type="text" id="city" name="city" placeholder="  City">
-                <button type="calculate">CALCULATE</button><br>
+                <button type="button">CALCULATE</button><br>
             </form>
         </div>
 
-        <!-- icon div for flex and desktop grid -->
+        <!-- icon DIV for flex -->
         <div class="icons">
+            <img src="images/icons/facebook.svg" alt="facebook">  
             <img src="images/icons/instagram.svg" alt="instagram">
             <img src="images/icons/twitter.svg" alt="twitter">
-            <img src="images/icons/facebook.svg" alt="facebook">            
             <img src="images/icons/linkedin.svg" alt="linkedin"> 
         </div>
              
