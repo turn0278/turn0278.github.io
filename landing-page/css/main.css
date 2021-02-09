@@ -403,7 +403,7 @@ input[id=city]{
   }
   
   .site-footer button{
-    width: 36%;
+    width: 34%;
   }
 
     /* reordered social media icons */
@@ -459,6 +459,7 @@ input[id=city]{
     justify-content: space-between;
   }
 
+  /* Setting widths for compatability across browsers */
   input[id=hours]{
     width: 21%;
     font-size: 2.25rem;
