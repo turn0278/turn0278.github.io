@@ -1,0 +1,394 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+  color: #ffdf61;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/***--------------------------
+       Custom Styles
+--------------------------***/
+
+html{
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  line-height: inherit;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:link,
+a:visited 
+a:active {
+  text-decoration: none;
+  color: #ff8480;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 5.063rem;
+  margin: 0.5em 0 0.5em;
+}
+
+h2 {
+  font-size: 3.375rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+  margin: 0.2em 0em 0em 0em;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 1em 0;
+}
+
+button{
+  border: none;
+  background: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/**** -----------------------
+        MOBILE STYLES
+------------------------- ****/
+
+/*** ----------- Header (Mobile) ----------- ***/
+
+  /* setting header border along bottom to divide areas, header bleeds to edges */
+.site-header{
+  border-bottom: #B320A9;
+  border-style: solid;
+  background-color: white;
+  width: 100%;
+  padding: 2%;
+  border-bottom-width: 1px;
+}
+
+  /* using flex for nav, simplest display for responsiveness as per mockup */
+nav{
+  display: flex;
+  justify-content: space-around; 
+}
+
+  /* setting styles for nav items as per mockup */
+.nav-link{
+  border-color: #B320A9;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10%;
+  font-size: 70%;
+  font-weight: bolder;
+  color: #b320A9;
+  width: 20%;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/*** ----------- Main (Mobile) ----------- ***/
+
+  /* no bleed for main */
+main{
+  margin: 0 15% 0 15%;
+}
+
+#frontpic{
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+
+
+  /* using flex for icons, simplest display for responsiveness as per mockup */
+.icons{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  /* creating shadowed box for blog, with border to match NAV and header border */
+.blog{
+  padding: 2% 2% 2% 2%;
+  border-radius: 25px;
+  box-shadow: 5px 5px 25px 2px grey;
+  margin: 5% 15% 5% 15%;
+  border-color: #B320A9;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.blog h4{
+  color: #FF47F3;
+}
+
+
+/*** ----------- Footer (Mobile) ----------- ***/
+
+  /* styling footer across all pages */
+.site-footer{
+  background-color: #b320A9;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  /* adjusting spacing of address */
+footer li{
+  line-height: 1;
+}
+
+
+/**** -----------------------
+        TABLET STYLES
+------------------------- ****/
+
+@media screen and (min-width: 760px){
+  
+  /*** ----------- Header (Tablet) ----------- ***/
+  
+    /* Changing margin and justification of flex items for better layout */
+  nav{
+    margin: 0 17% 0 13%;
+    justify-content: space-between; 
+  }
+  
+    /* Setting NAV font for larger screen */
+  .nav-link{
+    font-size: 100%;
+    
+  }
+
+  /*** ----------- Main (Tablet) ----------- ***/
+  
+    /* changing display for icons to grid and ordering according to mockup */
+  .icons{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "n r"
+    "c g"
+    ;
+  }
+
+  .nutrition{
+    grid-area: n;
+  }
+
+  .rivalries{
+    grid-area: r;
+  }
+
+  .catering{
+    grid-area: c;
+  }
+
+  .gluten{
+    grid-area: g;
+  }
+
+}
+/**** -----------------------
+        DESKTOP STYLES
+------------------------- ****/
+
+@media screen and (min-width: 1150px){
+
+  /*** ----------- Main (Desktop) ----------- ***/
+
+  .nav-link{
+    font-size: 150%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .reorder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:  
+    "ic bl"
+    ;
+    margin-bottom: 5%;
+  }
+
+  .icons{
+    grid-area: ic;
+  }
+
+  .blog{
+    grid-area: bl;
+  }
+  
+} 
