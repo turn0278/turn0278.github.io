@@ -272,10 +272,43 @@ main{
 
 #frontpic{
   width: 100%;
-  margin-bottom: 5%;
 }
 
+  /* styling title */
+h1{
+  color: #b320A9;
+  text-align: center;
+}
 
+  /* creating and styling shadowed box for feature item */
+.feature{
+  padding: 4% 4% 4% 4%;
+  margin: 5% 0%;
+  border-radius: 25px;
+  box-shadow: 5px 5px 25px 2px grey;
+  border-color: #B320A9;
+  border-style: solid;
+  border-width: 1px;
+}
+
+  /* aligning feature box items */
+.feature{
+  text-align: center;
+}
+
+  /* styline feature item title */
+.feature h5{
+  color: #FF47F3;
+}
+
+  /* situating and sizing feature item picture */
+.feature img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  padding-top: 1em;
+}
 
   /* using flex for icons, simplest display for responsiveness as per mockup */
 .icons{
@@ -283,22 +316,6 @@ main{
   flex-direction: column;
   align-items: center;
 }
-
-  /* creating shadowed box for blog, with border to match NAV and header border */
-.blog{
-  padding: 2% 2% 2% 2%;
-  border-radius: 25px;
-  box-shadow: 5px 5px 25px 2px grey;
-  margin: 5% 15% 5% 15%;
-  border-color: #B320A9;
-  border-style: solid;
-  border-width: 1px;
-}
-
-.blog h4{
-  color: #FF47F3;
-}
-
 
 /*** ----------- Footer (Mobile) ----------- ***/
 
@@ -315,7 +332,6 @@ main{
 footer li{
   line-height: 1;
 }
-
 
 /**** -----------------------
         TABLET STYLES
@@ -338,33 +354,19 @@ footer li{
   }
 
   /*** ----------- Main (Tablet) ----------- ***/
+
+  .feature h4{
+    font-size: 3.375rem;
+  }
   
+  .feature h5{
+    font-size: 2.25rem;
+  }
+
     /* changing display for icons to grid and ordering according to mockup */
   .icons{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "n r"
-    "c g"
-    ;
-  }
-
-  .nutrition{
-    grid-area: n;
-  }
-
-  .rivalries{
-    grid-area: r;
-  }
-
-  .catering{
-    grid-area: c;
-  }
-
-  .gluten{
-    grid-area: g;
-  }
+    display: flex;
+    flex-direction: row;
 
 }
 /**** -----------------------
@@ -382,38 +384,8 @@ footer li{
     border-radius: 20px;
   }
 
-    /* using grid to horizontally align icons and blogpost */
-  .reorder{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:  
-    "ic bl"
-    ;
-    margin-bottom: 5%;
-  }
-
   .icons{
-    grid-area: ic;
-  }
-
-    /* adjusting icon sizes for spacing */
-  .icons img{
-    width: 90%;
-  }
-
-    /* adjusting margins for new spacing */
-  .blog{
-    grid-area: bl;
-    margin: 5% 0 5% 5%;
-  }
-  
-  .blog h4{
-    font-size: 2.25em;
-  }
-
-  .blog p{
-    font-size: 1.25em; 
-  }
+    display:flex;
+    flex-direction: row;
 
 } 
