@@ -139,10 +139,12 @@ table {
        Custom Styles
 --------------------------***/
 
+  /* Setting font structure to ensure websafe  */
 html{
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
+  /* Adding some height to body to work with white space feel */
 body {
   line-height: 1.5;
 }
@@ -234,6 +236,12 @@ button{
   border-bottom-width: 1px;
 }
 
+  /* Using hovertrans animation property in order to use translation elsewhere if desired */
+@keyframes hovtrans {
+  50% {
+      transform: translate(0, -10px);}
+  }
+
   /* using flex for nav, simplest display for responsiveness as per mockup */
 nav{
   display: flex;
@@ -255,12 +263,20 @@ nav{
   padding-bottom: 1.5em;
 }
 
+  /* recolouring links to match swatches */
 nav a,
 nav a:link,
 nav a:visited 
 nav a:active {
   text-decoration: none;
   color: #B320A9;
+}
+
+  /* making the NAV elements translate with slight duration on hover */
+nav a:active {
+  background: #ffdf61;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
 
 /*** ----------- Main (Mobile) ----------- ***/
@@ -270,6 +286,7 @@ main{
   margin: 0 15% 0 15%;
 }
 
+  /* sizing optimized image */
 #frontpic{
   width: 100%;
 }
@@ -298,6 +315,7 @@ main{
 }
 
   /* aligning item titles to the centre beside prices */
+  /* using secondary colour from swatches for hierarchy effect */
 .cpmenu h5{
   color: #FF47F3;
   text-align: right;
@@ -439,15 +457,16 @@ footer li{
     /* Setting NAV font for larger screen */
   .nav-link{
     font-size: 100%;
-    
   }
 
   /*** ----------- Main (Tablet) ----------- ***/
 
+    /* resizing to match responsive design */
   .cpmenu h4{
     font-size: 3.375rem;
   }
   
+    /* resizing to match responsive design */
   .cpmenu h5{
     font-size: 2.25rem;
   }
@@ -466,6 +485,7 @@ footer li{
 
   /*** ----------- Main (Desktop) ----------- ***/
 
+    /* resizing and positioning to match responsive design */
   .nav-link{
     font-size: 150%;
     padding-top: 1em;
@@ -473,8 +493,11 @@ footer li{
     border-radius: 20px;
   }
 
+    /* using flex to align horizontally simply */
   .icons{
     display:flex;
     flex-direction: row;
 
+  }
 } 
+}

@@ -139,10 +139,12 @@ table {
        Custom Styles
 --------------------------***/
 
+/* Setting font structure to ensure websafe  */
 html{
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
+/* Adding some height to body to work with white space feel */
 body {
   line-height: 1.5;
 }
@@ -234,6 +236,12 @@ button{
   border-bottom-width: 1px;
 }
 
+ /* Using hovertrans animation property in order to use translation elsewhere if desired */
+@keyframes hovtrans {
+  50% {
+      transform: translate(0, -10px);}
+  }
+
   /* using flex for nav, simplest display for responsiveness as per mockup */
 nav{
   display: flex;
@@ -255,12 +263,27 @@ nav{
   padding-bottom: 1.5em;
 }
 
+  /* recolouring links to match swatches */
 nav a,
 nav a:link,
 nav a:visited 
 nav a:active {
   text-decoration: none;
   color: #B320A9;
+}
+
+  /* making the NAV elements translate with slight duration on hover */
+nav a:hover {
+  animation-name: hovtrans;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+  /* making the NAV elements translate with slight duration on hover */
+nav a:active {
+  background: #ffdf61;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
 
 /*** ----------- Main (Mobile) ----------- ***/
@@ -270,12 +293,11 @@ main{
   margin: 0 15% 0 15%;
 }
 
+  /* sizing optimized image */
 #frontpic{
   width: 100%;
   margin-bottom: 5%;
 }
-
-
 
   /* using flex for icons, simplest display for responsiveness as per mockup */
 .icons{
@@ -295,6 +317,7 @@ main{
   border-width: 1px;
 }
 
+  /* using secondary colour from swatches for hierarchy effect */
 .blog h4{
   color: #FF47F3;
 }
@@ -334,7 +357,6 @@ footer li{
     /* Setting NAV font for larger screen */
   .nav-link{
     font-size: 100%;
-    
   }
 
   /*** ----------- Main (Tablet) ----------- ***/
@@ -375,6 +397,7 @@ footer li{
 
   /*** ----------- Main (Desktop) ----------- ***/
 
+      /* resizing and positioning to match responsive design */
   .nav-link{
     font-size: 150%;
     padding-top: 1em;
