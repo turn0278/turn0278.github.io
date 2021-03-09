@@ -273,6 +273,13 @@ nav a:active {
 }
 
   /* making the NAV elements translate with slight duration on hover */
+  nav a:hover {
+    animation-name: hovtrans;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  /* making the NAV elements translate with slight duration on hover */
 nav a:active {
   background: #ffdf61;
   transition-duration: 0.3s;
