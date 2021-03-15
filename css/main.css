@@ -279,11 +279,9 @@ nav a:hover {
   animation-iteration-count: infinite;
 }
 
-  /* making the NAV elements translate with slight duration on hover */
+  /* making the NAV elements change colour when active */
 nav a:active {
   background: #ffdf61;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
 }
 
 /*** ----------- Main (Mobile) ----------- ***/

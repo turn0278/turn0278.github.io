@@ -139,12 +139,12 @@ table {
        Custom Styles
 --------------------------***/
 
-  /* Setting font structure to ensure websafe  */
+/* Setting font structure to ensure websafe  */
 html{
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-  /* Adding some height to body to work with white space feel */
+/* Adding some height to body to work with white space feel */
 body {
   line-height: 1.5;
 }
@@ -273,17 +273,15 @@ nav a:active {
 }
 
   /* making the NAV elements translate with slight duration on hover */
-  nav a:hover {
-    animation-name: hovtrans;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-  }
+nav a:hover {
+  animation-name: hovtrans;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
 
-  /* making the NAV elements translate with slight duration on hover */
+  /* making the NAV elements change colour when active */
 nav a:active {
   background: #ffdf61;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
 }
 
 /*** ----------- Main (Mobile) ----------- ***/
@@ -298,8 +296,14 @@ main{
   width: 100%;
 }
 
-  /* creating and styling shadowed box for menu items */
-.cpmenu div{
+  /* styling title */
+h1{
+  color: #b320A9;
+  text-align: center;
+}
+
+  /* creating and styling shadowed box for feature item */
+.feature{
   padding: 4% 4% 4% 4%;
   margin: 5% 0%;
   border-radius: 25px;
@@ -309,119 +313,24 @@ main{
   border-width: 1px;
 }
 
-
- /* centering page title */
-.cpmenu h1{
+  /* aligning feature box items */
+.feature{
   text-align: center;
 }
 
- /* aligning and colouring sub-headings */
-.cpmenu h4{
-  color: #b320A9;
-  text-align: center;
-}
-
-  /* aligning item titles to the centre beside prices */
+  /* styline feature item title */
   /* using secondary colour from swatches for hierarchy effect */
-.cpmenu h5{
+.feature h5{
   color: #FF47F3;
-  text-align: right;
 }
 
- /* aligning prices with item titles */
-.cpmenu p{
-  line-height: 2rem;
-}
-
-  /* sizing and aligning item pictures */
-.cpmenu img{
+  /* situating and sizing feature item picture */
+.feature img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 45%;
   padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-  /* using grid to align cakepop items */
-.cptxt{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4 (auto);
-  grid-template-areas: 
-  "mt mt"
-  "mp mp"
-  "mar1 mar2"
-  "cd1 cd2"
-  ;
-}
-
-  /* spanning menu item titles */
-.cptxt h4{
-  grid-area: mt;
-}
-
-  /* spanning cakepop picture */
-.cptxt img{
-  grid-area: mp;
-}
-
-  /* using nth-child to distinguish menu items */
-.cptext :nth-child(3){
-  grid-area: mar1;
-}
-
-.cptxt :nth-child(4){
-  grid-area: mar2;
-}
-
-.cptxt :nth-child(5){
-  grid-area: cd1;
-}
-
-.cptxt :nth-child(6){
-  grid-area: cd2;
-}
-
-
- /* using grid to align bread items */
-.bread{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4 (auto);
-  grid-template-areas: 
-  "bmt bmt"
-  "bmp bmp"
-  "sd1 sd2"
-  "wb1 wb2"
-  ;
-}
-
-  /* spanning bread title */
-.bread h4{
-  grid-area: bmt;
-}
-
-  /* spanning bread picture */
-.bread img{
-  grid-area: bmp;
-}
-
-  /* using nth-child to distinguish menu items */
-.bread :nth-child(3){
-  grid-area: sd1;
-}
-
-.bread :nth-child(4){
-  grid-area: sd2;
-}
-
-.bread :nth-child(5){
-  grid-area: wb1;
-}
-
-.bread :nth-child(6){
-  grid-area: wb2;
 }
 
   /* using flex for icons, simplest display for responsiveness as per mockup */
@@ -464,17 +373,18 @@ footer li{
     /* Setting NAV font for larger screen */
   .nav-link{
     font-size: 100%;
+    
   }
 
   /*** ----------- Main (Tablet) ----------- ***/
 
     /* resizing to match responsive design */
-  .cpmenu h4{
+  .feature h4{
     font-size: 3.375rem;
   }
-  
+
     /* resizing to match responsive design */
-  .cpmenu h5{
+  .feature h5{
     font-size: 2.25rem;
   }
 
@@ -504,7 +414,7 @@ footer li{
   .icons{
     display:flex;
     flex-direction: row;
-
   }
+
 } 
 }

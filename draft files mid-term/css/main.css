@@ -236,7 +236,7 @@ button{
   border-bottom-width: 1px;
 }
 
-  /* Using hovertrans animation property in order to use translation elsewhere if desired */
+ /* Using hovertrans animation property in order to use translation elsewhere if desired */
 @keyframes hovtrans {
   50% {
       transform: translate(0, -10px);}
@@ -279,11 +279,9 @@ nav a:hover {
   animation-iteration-count: infinite;
 }
 
-  /* making the NAV elements translate with slight duration on hover */
+  /* making the NAV elements change colour when active */
 nav a:active {
   background: #ffdf61;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
 }
 
 /*** ----------- Main (Mobile) ----------- ***/
@@ -296,43 +294,7 @@ main{
   /* sizing optimized image */
 #frontpic{
   width: 100%;
-}
-
-  /* styling title */
-h1{
-  color: #b320A9;
-  text-align: center;
-}
-
-  /* creating and styling shadowed box for feature item */
-.feature{
-  padding: 4% 4% 4% 4%;
-  margin: 5% 0%;
-  border-radius: 25px;
-  box-shadow: 5px 5px 25px 2px grey;
-  border-color: #B320A9;
-  border-style: solid;
-  border-width: 1px;
-}
-
-  /* aligning feature box items */
-.feature{
-  text-align: center;
-}
-
-  /* styline feature item title */
-  /* using secondary colour from swatches for hierarchy effect */
-.feature h5{
-  color: #FF47F3;
-}
-
-  /* situating and sizing feature item picture */
-.feature img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 45%;
-  padding-top: 1em;
+  margin-bottom: 5%;
 }
 
   /* using flex for icons, simplest display for responsiveness as per mockup */
@@ -341,6 +303,23 @@ h1{
   flex-direction: column;
   align-items: center;
 }
+
+  /* creating shadowed box for blog, with border to match NAV and header border */
+.blog{
+  padding: 2% 2% 2% 2%;
+  border-radius: 25px;
+  box-shadow: 5px 5px 25px 2px grey;
+  margin: 5% 15% 5% 15%;
+  border-color: #B320A9;
+  border-style: solid;
+  border-width: 1px;
+}
+
+  /* using secondary colour from swatches for hierarchy effect */
+.blog h4{
+  color: #FF47F3;
+}
+
 
 /*** ----------- Footer (Mobile) ----------- ***/
 
@@ -357,6 +336,7 @@ h1{
 footer li{
   line-height: 1;
 }
+
 
 /**** -----------------------
         TABLET STYLES
@@ -375,25 +355,36 @@ footer li{
     /* Setting NAV font for larger screen */
   .nav-link{
     font-size: 100%;
-    
   }
 
   /*** ----------- Main (Tablet) ----------- ***/
-
-    /* resizing to match responsive design */
-  .feature h4{
-    font-size: 3.375rem;
-  }
-
-    /* resizing to match responsive design */
-  .feature h5{
-    font-size: 2.25rem;
-  }
-
+  
     /* changing display for icons to grid and ordering according to mockup */
   .icons{
-    display: flex;
-    flex-direction: row;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "n r"
+    "c g"
+    ;
+  }
+
+  .nutrition{
+    grid-area: n;
+  }
+
+  .rivalries{
+    grid-area: r;
+  }
+
+  .catering{
+    grid-area: c;
+  }
+
+  .gluten{
+    grid-area: g;
+  }
 
 }
 /**** -----------------------
@@ -404,7 +395,7 @@ footer li{
 
   /*** ----------- Main (Desktop) ----------- ***/
 
-    /* resizing and positioning to match responsive design */
+      /* resizing and positioning to match responsive design */
   .nav-link{
     font-size: 150%;
     padding-top: 1em;
@@ -412,11 +403,38 @@ footer li{
     border-radius: 20px;
   }
 
-    /* using flex to align horizontally simply */
+    /* using grid to horizontally align icons and blogpost */
+  .reorder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:  
+    "ic bl"
+    ;
+    margin-bottom: 5%;
+  }
+
   .icons{
-    display:flex;
-    flex-direction: row;
+    grid-area: ic;
+  }
+
+    /* adjusting icon sizes for spacing */
+  .icons img{
+    width: 90%;
+  }
+
+    /* adjusting margins for new spacing */
+  .blog{
+    grid-area: bl;
+    margin: 5% 0 5% 5%;
+  }
+  
+  .blog h4{
+    font-size: 2.25em;
+  }
+
+  .blog p{
+    font-size: 1.25em; 
   }
 
 } 
-}
