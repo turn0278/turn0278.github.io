@@ -342,92 +342,38 @@ main{
   padding-bottom: 1em;
 }
 
-  /* using grid to align cakepop items */
+  /* aligning menu items vertically for responsive design */
 .cptxt{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: 
-  "mt mt"
-  "mp mp"
-  "mar1 mar2"
-  "cd1 cd2"
-  ;
-}
-
-  /* spanning menu item titles */
-.cptxt h4{
-  grid-area: mt;
-}
-
-  /* spanning cakepop picture */
-.cptxt img{
-  grid-area: mp;
-}
-
-  /* using nth-child to distinguish menu items */
-.cptext :nth-child(3){
-  grid-area: mar1;
-}
-
-.cptxt :nth-child(4){
-  grid-area: mar2;
-}
-
-.cptxt :nth-child(5){
-  grid-area: cd1;
-}
-
-.cptxt :nth-child(6){
-  grid-area: cd2;
-}
-
-
- /* using grid to align bread items */
-.bread{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: 
-  "bmt bmt"
-  "bmp bmp"
-  "sd1 sd2"
-  "wb1 wb2"
-  ;
-}
-
-  /* spanning bread title */
-.bread h4{
-  grid-area: bmt;
-}
-
-  /* spanning bread picture */
-.bread img{
-  grid-area: bmp;
-}
-
-  /* using nth-child to distinguish menu items */
-.bread :nth-child(3){
-  grid-area: sd1;
-}
-
-.bread :nth-child(4){
-  grid-area: sd2;
-}
-
-.bread :nth-child(5){
-  grid-area: wb1;
-}
-
-.bread :nth-child(6){
-  grid-area: wb2;
-}
-
-  /* using flex for icons, simplest display for responsiveness as per mockup */
-.icons{
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+  /* resizing to match responsive design */
+.cpmenu h4{
+  font-size: 3.375em;
+}
+
+  /* resizing to match responsive design */
+.cpmenu h5{
+  font-size: 2em;
+}
+
+  /* aligning menu items vertically for responsive design */
+.bread{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  /* resizing to match responsive design */
+.bread h4{
+  font-size: 3.375rem;
+}
+
+  /* resizing to match responsive design */
+.bread h5{
+  font-size: 2.25rem;
 }
 
 /*** ----------- Footer (Mobile) ----------- ***/
@@ -468,20 +414,19 @@ footer li{
   /*** ----------- Main (Tablet) ----------- ***/
 
     /* resizing to match responsive design */
-  .cpmenu h4{
-    font-size: 3.375rem;
-  }
-  
-    /* resizing to match responsive design */
-  .cpmenu h5{
-    font-size: 2.25rem;
-  }
+.cpmenu h4{
+  font-size: 3.375rem;
+}
 
-    /* changing display for icons to grid and ordering according to mockup */
+  /* resizing to match responsive design */
+.cpmenu h5{
+  font-size: 2.25rem;
+}
+
+    /* changing display for icons to flex for simplicity and ordering according to mockup */
   .icons{
     display: flex;
     flex-direction: row;
-
 }
 /**** -----------------------
         DESKTOP STYLES
@@ -499,11 +444,85 @@ footer li{
     border-radius: 20px;
   }
 
-    /* using flex to align horizontally simply */
-  .icons{
-    display:flex;
-    flex-direction: row;
+      /* using grid to align cakepop items */
+  .cptxt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "mt mt"
+    "mp mp"
+    "mar1 mar2"
+    "cd1 cd2"
+    ;
+  }
 
+    /* spanning menu item titles */
+  .cptxt h4{
+    grid-area: mt;
+  }
+
+    /* spanning cakepop picture */
+  .cptxt img{
+    grid-area: mp;
+  }
+
+    /* using nth-child to distinguish menu items */
+  .cptext :nth-child(3){
+    grid-area: mar1;
+  }
+
+  .cptxt :nth-child(4){
+    grid-area: mar2;
+  }
+
+  .cptxt :nth-child(5){
+    grid-area: cd1;
+  }
+
+  .cptxt :nth-child(6){
+    grid-area: cd2;
+  }
+
+
+  /* using grid to align bread items */
+  .bread{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "bmt bmt"
+    "bmp bmp"
+    "sd1 sd2"
+    "wb1 wb2"
+    ;
+  }
+
+    /* spanning bread title */
+  .bread h4{
+    grid-area: bmt;
+  }
+
+    /* spanning bread picture */
+  .bread img{
+    grid-area: bmp;
+  }
+
+    /* using nth-child to distinguish menu items */
+  .bread :nth-child(3){
+    grid-area: sd1;
+  }
+
+  .bread :nth-child(4){
+    grid-area: sd2;
+  }
+
+  .bread :nth-child(5){
+    grid-area: wb1;
+  }
+
+  .bread :nth-child(6){
+    grid-area: wb2;
   }
 } 
 }
