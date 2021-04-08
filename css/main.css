@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+
+body{
+  background-color:#14213D;
+}
+
+.header{
+  background-color:white;
+}
+
+.navbar-light{
+  color: #14213D;
+}
+
+.mainbody {
+  background-color:white;
+}
+
+h1{
+  color: #14213D;
+  font-family: 'Cinzel', serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+p {
+  color: #14213D;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.foottext {
+  color: #fca311;
+  font-size: .75em;
+  line-height: 0;
+  white-space: nowrap;
+}
+
+.fb{
+  max-height: 4em;
+}
+
+.insta{
+  max-height: 3.75em;
+}
+
+.footcont{
+  background-color:#14213D;
+}
+
+/* Tablet styles */
+
+@media screen and (min-width: 728px){
+  
+  /* Changing font-size for better spacing past md breakpoint */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+}
