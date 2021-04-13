@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 
+
+/* Changing colours and fonts to match branding */
 body{
   background-color:#14213D;
 }
@@ -47,31 +49,7 @@ img{
   height: auto;
 }
 
-/* .forest{
-  width: 100%;
-  height: auto;
-}
-
-.landscape{
-  width: 100%;
-  height: auto;
-}
-
-.bigtree{
-  width: 100%;
-  height: auto;
-}
-
-.video{
-  width: 100%;
-  height: auto;
-}
-
-.window{
-  width: 100%;
-  height: auto;
-} */
-
+ /* custom sizing for logo */
 .logomesh{
   height: 3em;
   width: auto;
@@ -79,7 +57,9 @@ img{
 
   /* custom navbar link color for branding */
 nav .navbar-nav li a{
-  color: #14213D;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* not ideal, but using !important because Bootstrap seems incapable of the simple task of recolouring links inside a nav bar */
+  color:#14213D !important;
 }
 
   /* formatting the contact form */
@@ -100,8 +80,9 @@ form label{
   width: 100%;
 }
 
-/* styles for footer */
+/* Styles for footer */
 
+  /* text to the left */
 .foottext {
   color: #fca311;
   font-size: .75em;
@@ -109,6 +90,7 @@ form label{
   white-space: nowrap;
 }
 
+  /* social media icons to the right */
 .fb{
   max-height: 4em;
   width: auto;

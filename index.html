@@ -17,26 +17,33 @@
   </head>
   <body>
 
+      <!-- header styling -->
     <div class="header">
       <!-- Using container-fluid to extend 100% accross sizes-->
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg offset-1 navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg offset-1 navbar-light bg-white ">
         <div class="container-fluid">
+
+            <!-- adding logo picture to be placed right -->
           <a class="navbar-brand" href="#">
             <img src="images/logomesh.png" alt="logomesh" class="d-inline-block align-text-top logomesh">
           </a>
+
+            <!-- toggle button via bootstrap for mobile nav -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
+            <!-- links to be styled -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
-              <li class="nav-item blue">
+              <li class="nav-item">
                 <a class="nav-link active" href="/index.html">Home</a>
               </li>
-              <li class="nav-item blue">
+              <li class="nav-item">
                 <a class="nav-link active" href="/services.html">Services</a>
               </li>
-              <li class="nav-item blue">
+              <li class="nav-item">
                 <a class="nav-link active" href="/contact.html">Contact</a>
               </li>                    
             </ul>
@@ -49,9 +56,6 @@
   </div>
     <!-- Adding div for overall control -->
     <div class="container mainbody">
-
-      <!-- Styling header -->
-      
 
         <!-- Styling the main -->
       <main>
@@ -78,8 +82,35 @@
           
           
         </div>
+
         <div class="row mt-3">
-          <img src="images/bigkeystone.jpg" class="img-fluid" alt="keystone">
+          <!-- <img src="images/bigkeystone.jpg" class="img-fluid" alt="keystone"> -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/bigkeystone.jpg" class="d-block w-100" alt="keystone">
+              </div>
+              <div class="carousel-item">
+                <img src="images/bigroof.jpg" class="d-block w-100" alt="roof">
+              </div>
+              <div class="carousel-item">
+                <img src="images/bigtree.jpg" class="d-block w-100" alt="bigtree">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
 
         <div class="row align-items-center justify-content-center mt-md-5 pb-md-5"> 
