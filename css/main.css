@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 
-
 /* Changing colours and fonts to match branding */
 body{
   background-color:#14213D;
@@ -104,15 +103,4 @@ form label{
 
 .footcont{
   background-color:#14213D;
-}
-
-/* Tablet styles */
-
-@media screen and (min-width: 728px){
-  
-  /* Changing font-size for better spacing past md breakpoint */
-  .indexh1 {
-    font-size: 1.5rem;
-  }
-
 }
