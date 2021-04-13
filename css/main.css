@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 
 body{
   background-color:#14213D;
@@ -23,10 +23,84 @@ h1{
   font-style: normal;
 }
 
+h3{
+  color: #14213D;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h4{
+  color: #14213D;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 p {
   color: #14213D;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+/* .forest{
+  width: 100%;
+  height: auto;
+}
+
+.landscape{
+  width: 100%;
+  height: auto;
+}
+
+.bigtree{
+  width: 100%;
+  height: auto;
+}
+
+.video{
+  width: 100%;
+  height: auto;
+}
+
+.window{
+  width: 100%;
+  height: auto;
+} */
+
+.logomesh{
+  height: 3em;
+  width: auto;
+}
+
+  /* custom navbar link color for branding */
+nav .navbar-nav li a{
+  color: #14213D;
+}
+
+  /* formatting the contact form */
+   /* custom color for send button */
+.btn-primary{
+  background-color:#fca311;
+  border-color: #14213D;
+}
+
+    /* changing form label text */
+form label{
+  color:#14213D;
+}
+
+    /* changing form border colours */
+.form-control{
+  border-color:#fca311;
+  width: 100%;
+}
+
+/* styles for footer */
 
 .foottext {
   color: #fca311;
@@ -37,10 +111,12 @@ p {
 
 .fb{
   max-height: 4em;
+  width: auto;
 }
 
 .insta{
   max-height: 3.75em;
+  width: auto;
 }
 
 .footcont{
@@ -52,7 +128,7 @@ p {
 @media screen and (min-width: 728px){
   
   /* Changing font-size for better spacing past md breakpoint */
-  h1 {
+  .indexh1 {
     font-size: 1.5rem;
   }
 
