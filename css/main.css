@@ -44,6 +44,7 @@ p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+  /* Because everything goes nuts if I don't */
 img{
   width: 100%;
   height: auto;
